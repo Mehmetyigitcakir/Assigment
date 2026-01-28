@@ -1,5 +1,5 @@
 public class d {
-    public static double average (int [] arrayInput){
+    public static int average (int [] arrayInput){
         int size = arrayInput.length;
         int sum = 0;
         int average = 0;
@@ -12,9 +12,18 @@ public class d {
     }
     public static String difference (int average , int [] arrayInput){
         int[] newArr = new int[arrayInput.length];
-            for (int i = 0; i < arrayInput.length; i++){
-                newArr[i] = arrayInput[i] - average;
+        String result = "";
+        for (int i = 0; i < arrayInput.length; i++){
+            newArr[i] = arrayInput[i] - average;
+        }
+        result += "[";
+        for (int i = 0; i < newArr.length; i++){
+            result += newArr[i];
+            if (i < newArr.length -1){
+                result += ", ";
             }
-        return newArr.toString();
+        }
+        result += "]";
+        return result;
     }
 }

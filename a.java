@@ -18,7 +18,6 @@ public class a {
 
    }
 
- scan.close();
  return newArr;
 
  }
