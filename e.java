@@ -7,6 +7,7 @@ public class e {
                 oddSum += arr[i];
             }
         }
+        return oddSum;
     }
     public static int findEvenSum(int arr[]){
         int evenSum = 0;
@@ -15,5 +16,6 @@ public class e {
                 evenSum += arr[i];
             }
         }
+        return evenSum;
     }
 }
